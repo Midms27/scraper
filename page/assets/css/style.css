@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flexbox;
+}
+
+
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+}
+
+#item, button {
+    margin: 10px;
+    height: 30px;
+    width: 25vh;
+    border: 1px solid black;
+    font-size: 15px;
+}
+
+input {
+    padding-left: 10px;
+}
+
+input:focus {
+    background-color: lightgray;
+}
+
+button {
+    width: 15.5vh;
+    float: right;
+}
+
+button:active {
+    background-color: lightgray;
+}
+
+#search {
+    text-align: center;
+    display: flex;
+}
+
+#info {
+    clear: right;
+}
+
+h2 {
+    margin: 10px;
+    font-size: xx-large;
+}
+
+p {
+    margin-left: 20px;
+    font-size: x-large;
+}
+
+aside {
+    display: inline-block;
+    float: left;
+    margin: 40px;
+}
+
+aside input {
+    margin-bottom: 20px;
+}

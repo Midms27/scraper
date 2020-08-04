@@ -1,0 +1,28 @@
+{
+  "name": "camisas_scraper",
+  "version": "1.0.0",
+  "description": "Scrapper de lojas de esporte",
+  "main": "server.js",
+  "dependencies": {
+    "console": "^0.7.2",
+    "csvtojson": "^2.0.10",
+    "fast-csv": "^4.3.1",
+    "fastify": "^3.0.0",
+    "fastify-static": "^3.1.0",
+    "node-fetch": "^2.6.0",
+    "puppeteer": "^3.3.0",
+    "yargs": "^15.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "scrapper",
+    "node",
+    "esporte"
+  ],
+  "author": "Miguel Donizete",
+  "license": "ISC"
+}
