@@ -4,8 +4,8 @@ const fs = require('fs');
 const headers = ['nome','imagem','preco'];
 
 //run scraper with item parameter from terminal
-// const argv = require('yargs').argv;
-// const item = argv.item;
+const argv = require('yargs').argv;
+const item = argv.item;
 
 const url1 = 'https://esportes.centauro.com.br/busca?q=';
 const url2 = 'https://www.netshoes.com.br/busca?nsCat=Natural&q='
@@ -30,7 +30,7 @@ const pesquisa = (site,busca) =>{
     }
 };
     
-const scraper = async(item) => {
+async(item) => {
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
     await page.goto(pesquisa(url1,item));
