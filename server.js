@@ -5,27 +5,14 @@ const { readData } = require('./src/file-reader');
 
 fastify.register(require('fastify-static'), {
     root: path.join(__dirname, 'page'),
-  })
-
+});
 
 fastify.get('/', function (req, reply) {
     reply.sendFile('index.html') 
 });
 
-// Rota de pesquisa das camisas
-fastify.get('/camisas', (req, res) => {
-  readData().then(data => {
-    const precos = data.map(el => el.preco);
-    res.send({
-      data,
-      max: Math.max(...precos),
-      min: Math.min(...precos),
-      count: data.length
-    });
-  })
-  .catch(err => {
-    res.status(500);
-  });
+fastify.get('/data/json', (req, reply) => {
+    reply.sendFile('data.json', path.join(__dirname, 'data'));
 });
 
 
