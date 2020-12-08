@@ -6,7 +6,7 @@
   "dependencies": {
     "console": "^0.7.2",
     "csvtojson": "^2.0.10",
-    "fast-csv": "^4.3.1",
+    "fast-csv": "^4.3.6",
     "fastify": "^3.0.0",
     "fastify-static": "^3.1.0",
     "node-fetch": "^2.6.0",
